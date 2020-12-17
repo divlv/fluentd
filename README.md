@@ -2,7 +2,7 @@
 
 FluentD logs collector with 2 extra plugins:
 
-1. fluent-plugin-**gelf** (for logs export to GrayLog instance) and
+1. fluent-plugin-**gelf-hs** (for logs export to GrayLog instance, UDP connection confirmed) and
 2. fluent-plugin-**concat** (for handling multiline logs)
 
 This image is based on **FluentD v1.11.5-1.0**.
