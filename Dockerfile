@@ -7,7 +7,7 @@ USER root
 # you may customize including plugins as you wish
 RUN apk add --no-cache --update --virtual .build-deps \
         sudo build-base ruby-dev \
- && sudo gem install fluent-plugin-gelf \
+ && sudo gem install fluent-plugin-gelf-hs \
  && sudo gem install fluent-plugin-concat \
  && sudo gem sources --clear-all \
  && apk del .build-deps \
