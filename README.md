@@ -20,4 +20,16 @@ Using default port: 24224.
 
 Prebuilt Docker image is available at: https://hub.docker.com/r/emergn/fluentd
 
+
+## Sample configuration
+
+For sample configuration file, see `fluentd/fluentd.conf`
+
+To collect Docker logs from particular process, start the Docker process like this (check "log-" options):
+
+```
+docker run -it --log-driver=fluentd --log-opt tag="mycontainer1" --log-opt fluentd-address=localhost:24224 --log-opt fluentd-async-connect="true" --network=host mydockerimage
+```
+
+
 eof
